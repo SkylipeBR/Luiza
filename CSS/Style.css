@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    z-index: 3;
+}
+
+
+
+header
+{
+    height: 10vh;
+    background: rgba(133, 133, 133, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0px 50px;
+}
+
+
+.nav-list
+{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-list .nav-item
+{
+    list-style: none;
+}
+
+.nav-list .nav-item .nav-link
+{
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+main
+{
+    background: linear-gradient( rgba(0,0,0, 0.8), rgba(0,0,0, 0.8)), url(../Images/banner.jpeg);
+    background-size: cover;
+    height: 100vh;
+
+}
+main .banner
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 30px;    
+}
+main .banner .banner-container{
+
+    width: 50%;
+    color: #fff;    
+
+}
+
+main .banner .banner-container .banner-text
+{
+    text-align: center;
+}
+
+main .banner .banner-container .banner-text #titulo
+{
+    width: 100%;
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    z-index: 2;
+}
+
+#arrow{
+    position: relative;
+    top: -30px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    animation: seta 1s linear infinite;
+}
+
+@keyframes seta {
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(10px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.sec-comeco
+{
+    background: #fff;
+    padding: 50px;
+    height: 100vh;
+}
+
+.sec-comeco .sec-comeco-container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../Images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 150px;
+}
+
+.sec-comeco .sec-comeco-container .sec-comeco-img
+{
+    width: 400px;
+    height: 400px;
+    background: url(../Images/foto\ 1.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.sec-comeco .sec-comeco-container .sec-comeco-text
+{
+    width: 40%;
+}
+
+#parallax
+{
+
+    width: 100%;
+    height: 70vh;
+    background: #b31015;
+    text-align: center;
+    background: url(../Images/banner\ parallax.png);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    z-index: 4;
+}
+
+
+.sec-part2
+{
+    padding: 55px;
+    background: url(../Images/estrelas.png);
+    background-size: 150px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.sec-part2 .sec-part2-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-part2 .sec-part2-container .sec-part2-text h2
+{
+    color: transparent;
+    -webkit-text-stroke: 3px rgba(0,0,0, 0.8);
+    list-style: 1em;
+    font-size: 3em;
+    width: 50%;
+    margin: auto auto;
+    cursor: pointer;
+}
+
+.sec-part2 .sec-part2-container .sec-part2-text
+{
+
+    text-align: center;
+    width: 80%;
+}
+
+.sec-part2 .sec-part2-container .sec-part2-text #titulo
+{
+    transition: 1s;
+    -webkit-text-stroke: 3px  #000;
+}
+
+.sec-part2 .sec-part2-container .sec-part2-text #titulo:hover
+{
+    filter: drop-shadow(0 0 25px #b31015);
+    -webkit-text-stroke: 3px  #b31015;
+    color: #b31015;
+}
+
+
+
+.carrosel
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+
