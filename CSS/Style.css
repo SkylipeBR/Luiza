@@ -121,7 +121,7 @@ main .banner .banner-container .banner-text #titulo
 {
     background: #fff;
     padding: 50px;
-    height: 80vh;
+    height: 100%;
 }
 
 .sec-comeco .sec-comeco-container
@@ -168,7 +168,7 @@ main .banner .banner-container .banner-text #titulo
 .sec-part2
 {   
     padding: 55px;
-    height: 70vh;
+    height: 100%;
     background: url(../Images/estrelas.png);
     background-size: 150px;
     background-position: left top 50px;
@@ -228,8 +228,8 @@ main .banner .banner-container .banner-text #titulo
 /* Ultima seção */
 .sec-fim
 {
-    height: 70vh;
-    padding: 50px;
+    height: 100%;
+    padding: 100px;
     background: #e4ce0a;
 }
 
@@ -254,6 +254,7 @@ main .banner .banner-container .banner-text #titulo
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 7em;
+    font-weight: bold;
     text-transform: uppercase;
     color: #0000009d;
     z-index: 2;
@@ -284,5 +285,104 @@ main .banner .banner-container .banner-text #titulo
     font-size: 1.2em;
     width: 70%;
     margin: 0 auto;
+}
+
+@media (max-width: 1200px)
+{
+    .sec-comeco .sec-comeco-container
+    {
+        flex-wrap: wrap;
+        background-position: none;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .sec-comeco .sec-comeco-container
+    {
+        background-position: none;
+        background: none;
+        text-align: center;
+    }
+    .sec-fim
+    {
+        height: 150vh;
+    }
+    .sec-fim .sec-fim-container .sec-fim-text #titulo
+    {
+        font-size: 4em;
+        font-weight: bold;
+        transform: translate(-50%, -70%);
+        width: 100%;
+    }
+    .sec-fim .sec-fim-container .sec-fim-text
+    {
+        text-align: center;
+    }
+
+    .sec-fim .sec-fim-container .sec-fim-text .sec-fim-paragrafo
+    {
+        font-size: 1em;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px)
+{
+
+    main .banner .banner-container .banner-text #titulo
+    {
+        font-size: 2em;
+    }
+
+    .sec-comeco .sec-comeco-container
+    {
+        background-position: none;
+        text-align: center;
+    }
+
+    .sec-comeco .sec-comeco-container .sec-comeco-img
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sec-comeco .sec-comeco-container .sec-comeco-text
+    {
+        margin: 50px 0px;
+        width: 100%;
+    }
+    .sec-part2 .sec-part2-container .sec-part2-text
+    {
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 499px)
+{
+    .sec-part2 
+    {
+        background: none;
+    }
+    .sec-part2 .sec-part2-container .sec-part2-text #titulo
+    {
+        width: 100%;
+        font-size: 3em;
+    }
+
+    .sec-fim .sec-fim-container .sec-fim-text #titulo
+    {
+        font-size: 2em;
+        font-weight: bold;
+        transform: translate(-50%, -70%);
+        width: 100%;
+    }
+
+    .sec-fim .sec-fim-container .sec-fim-text .sec-fim-paragrafo
+    {
+        width: 100%;
+    }
 }
 
